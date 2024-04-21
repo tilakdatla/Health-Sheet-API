@@ -14,3 +14,25 @@ Here's a brief overview of how the program works:
 4. The user can then view their Google Sheets document to see a record of their workouts and the estimated calories burned.
 
 This project demonstrates the power of APIs and how they can be used to create practical and useful applications. Whether you're a fitness enthusiast looking to track your progress, or a developer interested in working with APIs, this project has something for you. Enjoy! 😊
+
+# Getting Started
+
+To run this Fitness Tracker program, you'll first need to sign up for the Nutritionix API and generate an API key and ID. The Nutritionix API is used to estimate the calories burned for various exercises. You can sign up for the Nutritionix API [here](https://developer.nutritionix.com/signup).
+
+Next, you'll need to sign up for Sheety and make a copy of the Google Sheets document that you want to use to record your workout data. Sheety is used to send the exercise data to a Google Sheets document. You can sign up for Sheety [here](https://sheety.co/).
+
+Once you have your API key, ID, and Google Sheets document set up, you'll need to add these details to a `secret.js` file in your project. This file should export your API key, ID, and the endpoints for the Nutritionix API and your Sheety document.
+
+With everything set up, you're ready to run the program. First, you'll need to install all the necessary node modules. You can do this by running the following command in your terminal:
+
+```bash
+npm install
+```
+
+After all the node modules are installed, you can run the program with the following command:
+
+```bash
+node index.js
+```
+
+Now, you're all set! The program will prompt you for the exercise you did and for how long. It will then calculate the estimated calories burned and record this data in your Google Sheets document. Happy tracking! 😊
